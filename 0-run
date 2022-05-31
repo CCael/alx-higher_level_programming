@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+PYFILE = "Cael is cool"
+
+python(PYFILE)
