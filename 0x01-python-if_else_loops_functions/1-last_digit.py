@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
-#prints a negativenumber from 10000 to -10000
+# prints a negativenumber from 10000 to -10000
 if (number >= 0):
     lastDigit = number % 10
 else:
