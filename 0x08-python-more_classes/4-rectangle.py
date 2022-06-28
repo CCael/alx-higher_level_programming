@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Modify 2-rectangle
+"""Modify 3-rectangle
 Defines a Rectangle class.
 """
 
