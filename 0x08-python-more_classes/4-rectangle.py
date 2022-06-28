@@ -22,6 +22,9 @@ class Rectangle:
             rec_str += '\n'
         return rec_str[:-1]
 
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
     @property
     def width(self):
         return self.__width
