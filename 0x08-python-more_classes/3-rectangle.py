@@ -15,11 +15,12 @@ class Rectangle:
         total = ""
         if self.__height == 0 or self.width == 0:
             return total
+        rec_str = total
         for i in range(self.__height):
-            total += ("#" * self.__width)
-            if i is not self.__height - 1:
-                total += "\n"
-            return total
+            for j in range(self.__width):
+                rec_str += '#'
+            rec_str += '\n'
+        return rec_str[:-1]
 
     @property
     def width(self):
