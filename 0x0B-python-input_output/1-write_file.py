@@ -16,3 +16,9 @@ def write_file(filename="", text=""):
             count += 1
 
     return count
+
+
+if __name__ == '__main__':
+    filename = "Mine_file_1.txt"
+    count = number_of_lines(filename)
+    print("{} has {:d} lines".format(filename, count))
