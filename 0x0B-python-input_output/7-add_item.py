@@ -13,12 +13,12 @@ load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
 filename = 'add_item.json'
 
-if not os.path.isfile(filename):
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write('[]')
+input = []
+
+if os.path.exists(my_file) and os.path.getsize(my_file) > 0:
+    input = load_from_json_file(filename)
 
     if len(sys.argv) > 1:
-        input = load_from_json_file(filename)
         for i in sys.argv[1:]:
             input.append(i)
 
