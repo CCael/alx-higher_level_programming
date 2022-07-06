@@ -25,16 +25,4 @@ class student:
         of a Student instance
         """
 
-        return obj.__dict__
-
-
-if __name__ == '__main__':
-    students = [Student("Caleb", "Curry", 19), Student("Collins", "Cael", 21)]
-
-    for student in students:
-        j_student = student.to_json()
-        print(type(j_student))
-        print(j_student['first_name'])
-        print(type(j_student['first_name']))
-        print(j_student['age'])
-        print(type(j_student['age']))
+        return self.__dict__
