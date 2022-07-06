@@ -8,17 +8,5 @@ def write_file(filename="", text=""):
     """Returns number of characters
     """
 
-    count = 0
-
-    with open(filename, encoding="utf-8"):
-        text = f.readlines()
-        for line in text:
-            count += 1
-
-    return count
-
-
-if __name__ == '__main__':
-    filename = "Mine_file_1.txt"
-    count = number_of_lines(filename)
-    print("{} has {:d} lines".format(filename, count))
+    with open(filename, 'w', encoding='utf-8') as f:
+        return f.write(text)
