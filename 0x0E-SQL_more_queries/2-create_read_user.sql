@@ -1,6 +1,6 @@
 -- Creates the database hbtn_0d_2
 -- If db exists, script should not fail
-CREATE DATABASE IF NOT EXISTS hbtn_0d_2
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
 
 -- Create the user user_0d_2
 -- The user_0d_2 password should be set to user_0d_2_pwd
