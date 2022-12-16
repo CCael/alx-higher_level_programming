@@ -2,7 +2,7 @@
 """contains the function find_peak"""
 
 def find_peak(list_of_integers):
-    """finds a peak in a list of unsorted intefgers"""
+    """finds a peak in a list of unsorted integers"""
     list = list_of_integers
     l = len(list)
     if l == 0:
