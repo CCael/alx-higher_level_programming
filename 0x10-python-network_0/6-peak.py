@@ -6,7 +6,7 @@ def find_peak(list_of_integers):
     list = list_of_integers
     l = len(list)
     if l == 0:
-        return none
+        return
     m = l // 2
     if ((m == l - 1 or list[m] >= list[m + 1]) and (m == 0 or list[m] >= list[m - 1])):
         return list[m]
